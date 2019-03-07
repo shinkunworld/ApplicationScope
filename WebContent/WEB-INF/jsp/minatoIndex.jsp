@@ -17,10 +17,12 @@
 		<!-- Do get방식 -->
 		<a href="/applicationScope/MinatoIndex?action=like">like</a>
 		<%=siteEV.getLike()%>people
-		<!--EL식$(siteEV.like)people  -->
+		<!--EL식 표현.
+		${siteEV.like}people-->
 		<a href="/applicationScope/MinatoIndex?action=dislike">Dislike</a>
 		<%=siteEV.getDislike()%>people
-		<!--EL식 $(siteEV.dis	like)people  -->
+		<%--EL Scope표현
+		${applicationScope.siteEV.dislike}people--%>
 	</p>
 
 	<!--Do post방식 -->
@@ -28,7 +30,6 @@
 	<input type="hidden" name="action" value="like">
 	<input type="submit" value="よいね">
 </form>
-
 <form action="" method="post">
 	<input type="hidden" name="action" value="dislike">
 	<input type="submit" value="よくないね">
