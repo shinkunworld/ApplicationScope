@@ -17,8 +17,10 @@
 		<!-- Do get방식 -->
 		<a href="/applicationScope/MinatoIndex?action=like">like</a>
 		<%=siteEV.getLike()%>people
+		<!--EL식$(siteEV.like)people  -->
 		<a href="/applicationScope/MinatoIndex?action=dislike">Dislike</a>
 		<%=siteEV.getDislike()%>people
+		<!--EL식 $(siteEV.dis	like)people  -->
 	</p>
 
 	<!--Do post방식 -->
